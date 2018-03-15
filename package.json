@@ -1,0 +1,29 @@
+{
+  "name": "gcalendar-events",
+  "version": "1.0.0",
+  "description": "Node module that returns events from Google Calendar.",
+  "main": "./lib/gcalendarevents.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akashrajguru/gcalendar-events.git"
+  },
+  "author": "akashrajguru <aakashrajguru@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akashrajguru/gcalendar-events/issues"
+  },
+  "homepage": "https://github.com/akashrajguru/gcalendar-events#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "express": "^4.16.3"
+  }
+}
