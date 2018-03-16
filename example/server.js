@@ -1,6 +1,6 @@
 const express           = require('express');
 const secrets           = require('./config/secrets');
-const gcalendarevents   = require('../lib/gcalendarevents');
+const gcalendarevents   = require('../index');
 const port = 3010;
 const TIMEZONE = '+00:00';
 
@@ -23,7 +23,7 @@ app.get('/events',(req, res)=>{
         apiKey: secrets.apiKey,
         calendarId: secrets.calendarId
     };
-    gcalendarevents.getCalendarEvents(param).then(events => {
+    gcalendarevents.Events.getCalendarEvents(param).then(events => {
         return res.json(events);
     });
 });
